@@ -1,0 +1,93 @@
+.body{
+  background-color: #F0EFEA;
+  padding-top: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 115px;
+}
+
+.gallery figure img{
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: all 500ms ease-out;
+}
+
+.gallery figure:hover > img{
+  transform: scale(1.2);
+}
+
+.gallery{
+  columns: 5 290px;
+  column-gap: 0.8em;
+}
+
+.gallery figure{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.gallery figure .capa{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(44, 44, 46, 0.7);
+  transition: all 500ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.gallery figure:hover > .capa{
+  opacity: 1;
+  visibility: visible;
+}
+
+.gallery figure .capa p{
+  color: white;
+  font-size: 15px;
+  line-height: 1.5;
+  width: 100%;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 20%;
+  transition: all 500ms ease-out;
+}
+
+.gallery figure:hover > .capa p{
+  text-align: center;
+  margin-bottom: 0%;
+  transition: all 500ms ease-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*.gallery figure:hover > .capa h3{
+  margin-top: 70px;
+  margin-bottom: 15px;
+  transition: all 500ms ease-out;
+}
+
+.gallery figure .capa h3{
+  color: white;
+  font-weight: 400;
+  margin-bottom: 20%;
+  transition: all 500ms ease-out;
+  margin-top: 12%;
+}*/

@@ -1,0 +1,19 @@
+<div class="menu-container">
+  <ul class="menu">
+      <li class="menu-item" (mouseenter)="showImage('image1')">Diseño Editorial</li>
+      <li class="menu-item" (mouseenter)="showImage('image2')">Diseño Publicitario</li>
+      <li class="menu-item" (mouseenter)="showImage('image3')">Diseño Gráfico</li>
+      <li class="menu-item" (mouseenter)="showImage('image4')">Imagen corporativa</li>
+      <li class="menu-item" (mouseenter)="showImage('image5')">Fotografía </li>
+      <li class="menu-item" (mouseenter)="showImage('image6')">Otros</li>
+  </ul>
+  <div class="image-container">
+      <img [ngClass]="{'show': currentImage === 'image1'}" id="image1" src="https://images.unsplash.com/opengraph/1x1.png?blend=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1541130292430-a832637ddc0d%3Fblend%3D000000%26blend-alpha%3D10%26blend-mode%3Dnormal%26crop%3Dfaces%252Cedges%26h%3D630%26mark%3Dhttps%253A%252F%252Fimages.unsplash.com%252Fopengraph%252Fsearch-input.png%253Fh%253D84%2526txt%253Deditorial%2526txt-align%253Dmiddle%25252Cleft%2526txt-clip%253Dellipsis%2526txt-color%253D000000%2526txt-pad%253D80%2526txt-size%253D40%2526txt-width%253D660%2526w%253D750%2526auto%253Dformat%2526fit%253Dcrop%2526q%253D60%26mark-align%3Dmiddle%252Ccenter%26mark-w%3D750%26w%3D1200%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixid%3DM3wxMjA3fDB8MXxzZWFyY2h8M3x8ZWRpdG9yaWFsfGVzfDB8fHx8MTcxODM4MDk4OHww%26ixlib%3Drb-4.0.3&blend-w=1&h=630&mark=https%3A%2F%2Fimages.unsplash.com%2Fopengraph%2Flogo.png&mark-align=top%2Cleft&mark-pad=50&mark-w=64&w=1200&auto=format&fit=crop&q=60" class="image" alt="Imagen 1">
+      <img [ngClass]="{'show': currentImage === 'image2'}" id="image2" src="https://static.rfstat.com/mockup-maker/mockups/4460/5c647ec85dff298186493dd42a426904.webp" class="image" alt="Imagen 2">
+      <img [ngClass]="{'show': currentImage === 'image3'}" id="image3" src="https://media.istockphoto.com/id/1483745473/es/foto/el-dise%C3%B1ador-gr%C3%A1fico-trabaja-en-una-computadora-port%C3%A1til-con-l%C3%A1piz-digital-escrutar.webp?b=1&s=170667a&w=0&k=20&c=Wiu18oKOE1Jtfw7qYINcLiP7ag8OMoESH5hEIM4f_dw=" class="image" alt="Imagen 3">
+      <img [ngClass]="{'show': currentImage === 'image4'}" id="image4" src="https://www.edenred.mx/hs-fs/hubfs/Media%20Source%202023%20%20(imagenes%20blog)/Imagen%20corporativa/conclusion.png?width=900&height=500&name=conclusion.png" class="image" alt="Imagen 4">
+      <img [ngClass]="{'show': currentImage === 'image5'}" id="image5" src="https://images.unsplash.com/opengraph/1x1.png?blend=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1541654056076-0a252e083078%3Fblend%3D000000%26blend-alpha%3D10%26blend-mode%3Dnormal%26crop%3Dfaces%252Cedges%26h%3D630%26mark%3Dhttps%253A%252F%252Fimages.unsplash.com%252Fopengraph%252Fsearch-input.png%253Fh%253D84%2526txt%253DFot%2525C3%2525B3grafa%2526txt-align%253Dmiddle%25252Cleft%2526txt-clip%253Dellipsis%2526txt-color%253D000000%2526txt-pad%253D80%2526txt-size%253D40%2526txt-width%253D660%2526w%253D750%2526auto%253Dformat%2526fit%253Dcrop%2526q%253D60%26mark-align%3Dmiddle%252Ccenter%26mark-w%3D750%26w%3D1200%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixid%3DM3wxMjA3fDB8MXxzZWFyY2h8Mnx8bXVqZXIlMjBmb3QlQzMlQjNncmFmYXxlc3wwfHx8fDE3MTcxNjY0ODZ8MA%26ixlib%3Drb-4.0.3&blend-w=1&h=630&mark=https%3A%2F%2Fimages.unsplash.com%2Fopengraph%2Flogo.png&mark-align=top%2Cleft&mark-pad=50&mark-w=64&w=1200&auto=format&fit=crop&q=60" class="image" alt="Imagen 5">
+      <img [ngClass]="{'show': currentImage === 'image6'}" id="image6" src="https://www.colorland.com/sites/default/files/inline-images/View%20of%20tree%20crowns%2C%20sunset%20in%20the%20background.jpg" class="image" alt="Imagen 6">
+  </div>
+</div>
+

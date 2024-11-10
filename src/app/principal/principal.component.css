@@ -1,0 +1,213 @@
+.principal-content{
+  /*background-color: rgb(31, 31, 31);*/
+  padding-top: 0;
+}
+
+/*BANNER-------------------------------*/
+
+.banner-content{
+  text-align: center;
+}
+
+.figure-banner img{
+  width: 100%;
+}
+
+@media (max-width: 500px) {
+  .figure-banner img{
+    width: 200vh;
+  }
+}
+
+
+
+
+
+/*SERVICIOS--------------------------------------------------------------*/
+.p-title{
+  padding-top: 40px;
+}
+
+.Titulo-S{
+  padding-top: 20px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.Titulo-S h1{
+  font-weight: bold;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  /*background-color: rgb(51, 255, 0);*/
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1px;
+}
+
+hr {
+  padding: 0;
+  margin: 0;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 1%;
+  width: 30%;
+  background-color: rgba(175, 175, 175, 0.7);
+  border-radius: 10px;
+}
+
+.menu-item {
+  padding: 10px;
+  cursor: pointer;
+  color: rgb(255, 255, 247);
+  font-family: "Arsenal", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 250%;
+}
+
+.menu-item:hover{
+  font-style: italic;
+  font-weight: bold;
+  background-color: rgba(44, 44, 46, 0.322);
+}
+
+.image-container {
+  margin: 1%;
+  position: relative;
+  width: 950px;
+  height: 490px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.image {
+  position: absolute;
+  align-self: center;
+  top: 0;
+  left: 0;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.image.show {
+  opacity: 1; /* Mostrar la imagen */
+  transform: scale(1.03);
+  transition: all 500ms ease-out;
+}
+
+@media (max-width: 800px){
+  .p-title{
+    padding-top: 120px;
+  }
+  .menu-item {
+    font-size: 132%;
+    line-height: 0.9;
+  }
+  .image-container {
+    height: 300px;
+  }
+}
+
+@media (max-width: 500px) {
+  .p-title{
+    padding-top: 10px;
+  }
+  .menu-container{
+    display: block;
+  }
+  .menu{
+    width: 98%;
+  }
+  .menu-item {
+    font-size: 150%;
+    line-height: 0.9;
+  }
+  .image-container {
+    width: 98%;
+    height: 200px;
+  }
+  .image {
+    width: auto;
+    height: 100%;
+  }
+}
+
+
+/*GALERIA--------------------------------------------------------------
+#F0EFEA*/
+.body{
+  /*background-color: #000000;*/
+  padding-top: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery figure img{
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: all 500ms ease-out;
+}
+
+.gallery figure:hover > img{
+  transform: scale(1.2);
+}
+
+.gallery{
+  columns: 5 290px;
+  column-gap: 0.8em;
+}
+
+.gallery figure{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.gallery figure .capa{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(44, 44, 46, 0.7);
+  transition: all 500ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.gallery figure:hover > .capa{
+  opacity: 1;
+  visibility: visible;
+}
+
+.gallery figure .capa p{
+  color: white;
+  font-size: 15px;
+  line-height: 1.5;
+  width: 100%;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 20%;
+  transition: all 500ms ease-out;
+}
+
+.gallery figure:hover > .capa p{
+  text-align: center;
+  margin-bottom: 0%;
+  transition: all 500ms ease-out;
+}

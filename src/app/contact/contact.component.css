@@ -1,0 +1,122 @@
+/*ESTILOS DEL PROCESO*/
+.container-process {
+  height: 130vh; /* Altura para hacer scroll */
+  padding-top: 110px;
+}
+
+.box {
+  background-color: lightblue;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  width: 40%;
+  height: 140px;
+  position: sticky;
+  top: 100px; /* Se pegará en la parte superior del viewport */
+  z-index: 1;
+}
+
+.box:nth-child(2) {
+  background-color: lightcoral;
+  z-index: 2;
+}
+
+.box:nth-child(3) {
+  background-color: lightgreen;
+  z-index: 3;
+}
+
+.box:nth-child(4) {
+  background-color: lightyellow;
+  z-index: 4;
+}
+
+.box:nth-child(5) {
+  background-color: lightpink;
+  z-index: 5;
+}
+
+
+/*ESTILOS DE REDES SOCIALES*/
+.body-contact{
+  display: flex;
+  justify-content: center;
+}
+
+.content-contact{
+  width: 90%;
+  padding-top: 0;
+  text-align: center;
+}
+
+.content-contact h2{
+  margin: 20px 0px 40px 0;
+}
+
+.menu-options{
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact{
+  display: flex;
+  align-items: center; /* Centra verticalmente */
+  justify-content: center; /* Centra horizontalmente */
+
+  margin: 30px 10px;
+  width: 100%;
+  height: 50px;
+
+  border-radius: 20px;
+  border: 1px solid;
+  border-color: aquamarine;
+
+  background-color: rgba(64, 129, 108, 0.685);
+  color: white;
+}
+
+.contact:hover{
+  background-color: rgb(125, 255, 212);
+  color: black;
+}
+
+.contact h3{
+  margin-bottom: 2px;
+}
+
+
+/*ESTILOS DEL FORMULARIO*/
+.form-c{
+  margin: 5% 23% 5% 23%;
+  padding: 50px 15px 15px 15px;
+  border: 1px solid rgb(86, 86, 86);
+  border-radius: 10px;
+}
+
+.title-form{
+  margin-bottom: 8%;
+}
+
+
+/*Movil----------------------------------------------------------------------*/
+@media (max-width: 800px) {
+
+/*ESTILOS BOTONES CONTACTO*/
+.contact h3{
+  font-size: small;
+}
+.content-contact{
+  width: 98%;
+  text-align: center;
+}
+.contact{
+  margin: 20px 1px;
+  height: 45px;
+}
+
+/*ESTILOS DEL FORMULARIO*/
+  .form-c{
+    margin: 5% 1% 5% 1%;
+    padding: 50px 15px 15px 15px;
+  }
+}

@@ -1,0 +1,36 @@
+.container-process {
+  height: 140vh; /* Altura para hacer scroll */
+  padding-top: 110px;
+}
+
+.box {
+  background-color: lightblue;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  width: 40%;
+  height: 150px;
+  position: sticky;
+  top: 120px; /* Se pegará en la parte superior del viewport */
+  z-index: 1;
+}
+
+.box:nth-child(2) {
+  background-color: lightcoral;
+  z-index: 2;
+}
+
+.box:nth-child(3) {
+  background-color: lightgreen;
+  z-index: 3;
+}
+
+.box:nth-child(4) {
+  background-color: lightyellow;
+  z-index: 4;
+}
+
+.box:nth-child(5) {
+  background-color: lightpink;
+  z-index: 5;
+}

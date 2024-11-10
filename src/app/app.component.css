@@ -1,0 +1,10 @@
+nav {
+  background-color: #E5D6C0;
+  padding: 2% 0;
+}
+
+.navbar-brand{
+  font-weight: bold;
+  font-style: italic;
+  font-size: 190%;
+}

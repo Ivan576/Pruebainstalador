@@ -1,0 +1,85 @@
+<div class="principal-content">
+
+  <div class="banner-content">
+    <figure class="figure-banner">
+      <img src="https://marketplace.canva.com/EAF5iZXZNjc/2/0/800w/canva-fondo-de-pantalla-de-escritorio-religioso-espiritual-en-negro-gris-estilo-ui-minimalista-oscura-G4krDaNhhIQ.jpg" alt="">
+    </figure>
+  </div>
+
+  <div class="p-title Titulo-S">
+    <h1>Mis Servicios</h1>
+  </div>
+  <div class="menu-container">
+    <ul class="menu">
+      <li class="menu-item" (mouseenter)="showImage('image1')">Diseño Editorial</li><hr>
+      <li class="menu-item" (mouseenter)="showImage('image2')">Diseño Publicitario</li><hr>
+      <li class="menu-item" (mouseenter)="showImage('image3')">Diseño Gráfico</li><hr>
+      <li class="menu-item" (mouseenter)="showImage('image4')">Imagen corporativa</li><hr>
+      <li class="menu-item" (mouseenter)="showImage('image5')">Fotografía</li><hr>
+      <li class="menu-item" (mouseenter)="showImage('image6')">Otros</li>
+    </ul>
+    <div class="image-container">
+      <img [ngClass]="{'show': currentImage === 'image1'}" id="image1" [src]="img1" class="image" alt="Imagen 1">
+      <img [ngClass]="{'show': currentImage === 'image2'}" id="image2" [src]="img2" class="image" alt="Imagen 2">
+      <img [ngClass]="{'show': currentImage === 'image3'}" id="image3" [src]="img3" class="image" alt="Imagen 3">
+      <img [ngClass]="{'show': currentImage === 'image4'}" id="image4" [src]="img1" class="image" alt="Imagen 4">
+      <img [ngClass]="{'show': currentImage === 'image5'}" id="image5" [src]="img2" class="image" alt="Imagen 5">
+      <img [ngClass]="{'show': currentImage === 'image6'}" id="image6" [src]="img3" class="image" alt="Imagen 6">
+    </div>
+  </div>
+
+  <div class="Titulo-S">
+    <h1>Algunos Proyectos</h1>
+  </div>
+  <div class="body">
+    <div class="gallery">
+      <figure>
+        <img
+          src="https://www.yaakunflores.com/uploads/arreglos/caja-cuadrada-blanca-rosa-blanca-nude-con-follajes-finos.jpg" />
+        <div class="capa">
+          <p>
+            <strong style="font-size: 200%;">Titulo</strong><br>
+            Lorem input dolor sit amet, consectetur adipicising elit. aliquam non, consequutur reiciendis aperiam.
+          </p>
+        </div>
+      </figure>
+      <figure>
+        <img src="https://www.blogdelfotografo.com/wp-content/uploads/2015/08/3326693655_d6e30ce3f6_o.jpg" />
+        <div class="capa">
+          <p>
+            <strong style="font-size: 200%;">Titulo</strong><br>
+            Lorem input dolor sit amet, consectetur adipicising elit. aliquam non, consequutur reiciendis aperiam.
+          </p>
+        </div>
+      </figure>
+      <figure>
+        <img src="https://i.etsystatic.com/35367581/r/il/3f2078/3946179391/il_570xN.3946179391_tk9y.jpg" />
+        <div class="capa">
+          <p>
+            <strong style="font-size: 200%;">Titulo</strong><br>
+            Lorem input dolor sit amet, consectetur adipicising elit. aliquam non, consequutur reiciendis aperiam.
+          </p>
+        </div>
+      </figure>
+      <figure>
+        <img src="https://lugarte.com/wp-content/uploads/2014/12/Untitled-11.jpg" />
+        <div class="capa">
+          <p>
+            <strong style="font-size: 200%;">Titulo</strong><br>
+            Lorem input dolor sit amet, consectetur adipicising elit. aliquam non, consequutur reiciendis aperiam.
+          </p>
+        </div>
+      </figure>
+      <figure>
+        <img src="https://www.blogdelfotografo.com/wp-content/uploads/2015/08/3326693655_d6e30ce3f6_o.jpg" />
+        <div class="capa">
+          <p>
+            <strong style="font-size: 200%;">Titulo</strong><br>
+            Lorem input dolor sit amet, consectetur adipicising elit. aliquam non, consequutur reiciendis aperiam.
+          </p>
+        </div>
+      </figure>
+
+    </div>
+  </div>
+</div>
